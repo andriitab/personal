@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>АНДРІЙ ТАБОРОВ — WE ARE VINEYARD UKRAINE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-top: #141414;
+      --bg-bottom: #000000;
+      --border-line: rgba(255, 255, 255, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+      border-radius: 0px !important;
+    }
+
+    html, body {
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(180deg, var(--bg-top) 0%, #070707 45%, var(--bg-bottom) 100%);
+      color: #f4f4f5;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .font-mono-tech {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .grid-frame {
+      border: 1px solid var(--border-line);
+      background: rgba(10, 10, 10, 0.72);
+    }
+
+    .border-strict {
+      border-color: var(--border-line) !important;
+    }
+
+    .portrait-stage {
+      position: relative;
+      overflow: hidden;
+      background: #0c0c0c;
+    }
+
+    .portrait-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 18%;
+      filter: contrast(1.06) brightness(0.95);
+      transition: opacity 0.35s ease, transform 0.5s ease;
+    }
+
+    .portrait-vignette {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.15) 0%,
+        rgba(0, 0, 0, 0) 45%,
+        rgba(0, 0, 0, 0.85) 100%
+      );
+      pointer-events: none;
+    }
+
+    .qr-container-box {
+      background: transparent;
+      padding: 8px 0 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      flex: 1;
+    }
+
+    .qr-container-box img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      image-rendering: crisp-edges;
+      transition: transform 0.25s ease;
+    }
+
+    .qr-container-box img:hover {
+      transform: scale(1.02);
+    }
+
+    .btn-strict {
+      border: 1px solid var(--border-line);
+      background: transparent;
+      color: #e4e4e7;
+      transition: all 0.2s ease;
+    }
+
+    .btn-strict:hover {
+      background: #ffffff;
+      color: #000000;
+      border-color: #ffffff;
+    }
+
+    .social-icon-btn {
+      border: 1px solid var(--border-line);
+      background: rgba(255, 255, 255, 0.03);
+      color: #d4d4d8;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+    }
+
+    .social-icon-btn:hover {
+      background: #ffffff;
+      color: #000000;
+      border-color: #ffffff;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+  <!-- TOP BAR -->
+  <header class="w-full max-w-6xl mx-auto px-5 sm:px-8 pt-5 pb-3 flex flex-wrap items-center justify-between gap-4">
+    <div class="flex flex-wrap items-center gap-3 sm:gap-5">
+      <div class="flex items-center gap-3">
+        
+        <a href="https://t.me/ANDRII_TABOROV" target="_blank" rel="noopener noreferrer"
+           class="font-mono-tech text-xs sm:text-sm tracking-[0.22em] uppercase text-white font-medium hover:text-zinc-300 transition-colors">
+          АНДРІЙ ТАБОРОВ
+        </a>
+      </div>
+
+      <span class="text-white/20 hidden sm:inline">|</span>
+
+      <!-- СОЦІАЛЬНІ ІКОНКИ -->
+      <div class="flex items-center gap-2">
+        <!-- Telegram -->
+        <a href="https://t.me/ANDRII_TABOROV" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Telegram">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.74 7.58-3.27 3.61-1.51 4.36-1.77 4.85-1.78.11 0 .35.03.5.15.13.11.17.26.19.37 0 .07.02.24 0 .38z"/></svg>
+        </a>
+        <!-- Телефон -->
+        <a href="tel:+380000000000" class="social-icon-btn" title="Телефон">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Instagram">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="font-mono-tech text-[11px] sm:text-xs tracking-[0.22em] uppercase text-zinc-500">
+      WE ARE VINEYARD UKRAINE
+    </div>
+  </header>
+
+  <!-- MAIN EXPANDED 2-COLUMN CARD -->
+  <main class="w-full max-w-6xl mx-auto px-5 sm:px-8 my-0 flex-1 flex items-stretch">
+    <div class="grid-frame w-full grid grid-cols-1 md:grid-cols-2">
+
+      <!-- LEFT COLUMN: PORTRAIT -->
+      <div class="flex flex-col border-b md:border-b-0 md:border-r border-strict">
+        <div class="px-5 py-3 border-b border-strict flex items-center justify-between bg-black/50">
+          <span id="photoLabel" class="font-mono-tech text-[11px] tracking-[0.2em] uppercase text-zinc-400">
+            ПОРТРЕТ // 01
+          </span>
+          <button id="togglePhotoBtn" onclick="togglePhoto()"
+                  class="btn-strict font-mono-tech text-[10px] tracking-[0.18em] uppercase px-2.5 py-1 cursor-pointer">
+            [ СЦЕНА / БАС ]
+          </button>
+        </div>
+
+        <div class="portrait-stage flex-1 min-h-[420px] sm:min-h-[520px] flex items-center justify-center cursor-pointer group"
+             onclick="window.open('https://t.me/ANDRII_TABOROV', '_blank')">
+          <img id="mainPhoto"
+               src="portrait.jpg"
+               alt="Андрій Таборов"
+               onerror="handleMissingImg(this, 'portrait.jpg')" />
+          <div class="portrait-vignette"></div>
+
+          <div id="photoFallback" class="hidden absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-zinc-950">
+            <span class="font-mono-tech text-xs tracking-[0.2em] text-zinc-500 uppercase mb-2">[ ОЧІКУЄ ФАЙЛ ]</span>
+            <span id="missingFileName" class="font-mono-tech text-sm text-zinc-300">portrait.jpg</span>
+          </div>
+        </div>
+      </div>
+
+<!-- RIGHT COLUMN: ТЕКСТ + КОМПАКТНИЙ QR МОНОБАНКИ (ЛІРУЧ QR, ПРАВОРУЧ ПОЯСНЕННЯ) -->
+      <div class="flex flex-col justify-between p-6 sm:p-8 lg:p-10 bg-black/40">
+
+        <!-- Intro Text & Bio -->
+        <div class="pb-6 sm:pb-8 border-b border-strict">
+          <h2 class="font-mono-tech text-xs sm:text-sm tracking-[0.2em] uppercase text-white font-semibold mb-3">
+            // Звукорежисер, музикант
+          </h2>
+          
+          <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed font-normal mb-3">
+            Андрій Таборов — фахівець із багатогранним технічним та творчим досвідом, чия діяльність охоплює звукорежисуру, управління живим звуком, цифрові мікшування та налаштування складних аудіосистем. Він активно працює з музичним обладнанням, займається гітарною практикою, керуванням пресетів через зовнішні контролери та глибоко розбирається у веб-розробці й автоматизації процесів за допомогою скриптів. Окрім цього, Андрій володіє технічними навичками універсального спрямування — від роботи з електронікою до домашніх реновацій.
+          </p>
+
+          <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed font-normal mb-4">
+            Окрім технічної сфери, його творче життя тісно пов'язане з музикою. Андрій є учасником музичного проєкту <strong class="text-white">F.Worship</strong> — команди прославлення, яка створює сучасну християнську музику, об'єднуючи людей навколо спільного поклоніння та творчості.
+          </p>
+
+          <!-- Логотип F.Worship на 70% ширини текстового блоку -->
+          <div class="pt-2 flex justify-center">
+            <a href="https://andriitab.github.io/fworship/" target="_blank" rel="noopener noreferrer" 
+               class="block w-[70%] p-3 border border-strict bg-black/60 hover:bg-black/90 transition-all text-center group">
+              <img src="logo-fworship.png" alt="F.Worship" class="w-full h-auto object-contain filter brightness-90 group-hover:brightness-100 transition-all" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Monobank QR (Компактний: зліва QR, справа пояснення з посиланням) -->
+        <div class="pt-6 sm:pt-8 flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-4">
+            <span class="font-mono-tech text-xs tracking-[0.2em] uppercase text-zinc-400">
+              MONOBANK // НА РОЗВИТОК
+            </span>
+            <span class="font-mono-tech text-[11px] tracking-[0.16em] text-zinc-500 uppercase">
+              БАНКА
+            </span>
+          </div>
+
+          <div class="flex flex-row items-center gap-5 bg-black/30 p-4 border border-strict">
+            <!-- QR-код зліва (менший розмір) -->
+            <div class="w-32 h-32 sm:w-36 sm:h-36 shrink-0 flex items-center justify-center">
+              <a href="https://send.monobank.ua/YOUR_JAR_LINK" target="_blank" rel="noopener noreferrer" class="block w-full h-full flex items-center justify-center cursor-pointer group" title="Відкрити банку Monobank">
+                <img src="qr-mono.png"
+                     alt="QR Monobank"
+                     class="w-full h-full object-contain transition-transform duration-200 group-hover:scale-105"
+                     onerror="handleMissingQr(this, 'qr-mono.png')" />
+              </a>
+            </div>
+
+            <!-- Пояснення праворуч -->
+            <div class="flex flex-col justify-center">
+              <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed mb-3">
+                Підтримати розвиток проєктів та ініціатив можна за допомогою QR-коду або перейшовши за посиланням.
+              </p>
+              <a href="https://send.monobank.ua/jar/5fWd6s7B8V" target="_blank" rel="noopener noreferrer" 
+                 class="font-mono-tech text-[11px] sm:text-xs text-white underline underline-offset-4 hover:text-zinc-300 transition-colors inline-flex items-center gap-1">
+                <span>[ ПОПОВНИТИ БАНКУ ] </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full max-w-6xl mx-auto px-5 sm:px-8 pt-3 pb-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-zinc-500 font-mono-tech text-[11px] tracking-[0.2em] uppercase">
+    <span>WE ARE VINEYARD UKRAINE</span>
+    <span>© 2026 АНДРІЙ ТАБОРОВ</span>
+  </footer>
+
+  <script>
+    let isStageMode = false;
+
+    function togglePhoto() {
+      const img = document.getElementById('mainPhoto');
+      const label = document.getElementById('photoLabel');
+      const btn = document.getElementById('togglePhotoBtn');
+      const fallback = document.getElementById('photoFallback');
+
+      isStageMode = !isStageMode;
+      fallback.classList.add('hidden');
+      img.classList.remove('hidden');
+
+      if (isStageMode) {
+        img.src = 'bass.jpg';
+        img.onerror = () => handleMissingImg(img, 'bass.jpg');
+        label.textContent = 'СЦЕНА // БАС // 02';
+        btn.textContent = '[ ПОРТРЕТ ]';
+      } else {
+        img.src = 'portrait.jpg';
+        img.onerror = () => handleMissingImg(img, 'portrait.jpg');
+        label.textContent = 'ПОРТРЕТ // 01';
+        btn.textContent = '[ СЦЕНА / БАС ]';
+      }
+    }
+
+    function handleMissingImg(imgEl, filename) {
+      imgEl.classList.add('hidden');
+      const fallback = document.getElementById('photoFallback');
+      const nameSpan = document.getElementById('missingFileName');
+      nameSpan.textContent = filename;
+      fallback.classList.remove('hidden');
+    }
+
+    function handleMissingQr(imgEl, filename) {
+      const parent = imgEl.parentElement;
+      parent.innerHTML = `<span class="font-mono-tech text-xs text-zinc-400 text-center px-2">${filename}</span>`;
+    }
+  </script>
+</body>
+</html>
